@@ -1,66 +1,39 @@
 #grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
-    padding: 10px;
+    grid-template-rows: 124px 124px 124px 124px 124px;
+    grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
+    grid-gap: 10px 10px;
 }
 
-/* Common styling for all boxes */
+/* common styling */
 #grid > div {
-    background-color: green;
+    background: green;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     padding: 10px;
 }
 
-/* Positioning items */
-
-/* 1 */
+/* item 1 */
 #grid > div:nth-child(1) {
-    grid-row: 1 / 4;
+    grid-column: span 4 / auto;
 }
 
-/* 2 */
+/* item 2 */
 #grid > div:nth-child(2) {
-    grid-column: 2 / 5;
+    grid-row: span 4 / auto;
 }
 
-/* 3 */
-#grid > div:nth-child(3) {
-    grid-column: 2 / 3;
-}
-
-/* 4 */
+/* item 4 */
 #grid > div:nth-child(4) {
-    grid-column: 3 / 4;
+    grid-column: span 2 / auto;
 }
 
-/* 5 */
+/* item 5 */
 #grid > div:nth-child(5) {
-    grid-column: 2 / 4;
+    grid-column: span 2 / auto;
 }
 
-/* 6 */
-#grid > div:nth-child(6) {
-    grid-column: 3 / 4;
-}
-
-/* 7 */
-#grid > div:nth-child(7) {
-    grid-column: 2 / 3;
-}
-
-/* 8 */
-#grid > div:nth-child(8) {
-    grid-column: 3 / 4;
-}
-
-/* 9 */
-#grid > div:nth-child(9) {
-    grid-column: 3 / 4;
-}
-
-/* 10 */
+/* item 10 */
 #grid > div:nth-child(10) {
-    grid-column: 2 / 4;
+    grid-column: span 3 / auto;
 }
